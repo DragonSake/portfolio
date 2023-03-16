@@ -13,6 +13,7 @@ html {
   --darkred: #6f0909;
   --red: #b42523;
   --gold: #fdba47;
+  --white: #fff;
   --font: Arial, Helvetica, sans-serif;
 }
 
@@ -114,7 +115,7 @@ button:hover{
 }
 
 button:nth-of-type(2){
-  background-color: white;
+  background-color: var(--white);
   color: var(--darkblue);
   border: 2px solid var(--darkblue);
   margin-left: 1em;
@@ -122,7 +123,7 @@ button:nth-of-type(2){
 
 button:nth-of-type(2):hover{
   background-color: var(--darkblue);
-  color: white;
+  color: var(--white);
 }
 
 section section:nth-of-type(3){
@@ -153,7 +154,7 @@ section section:nth-of-type(4) a{
   font-size: 1.75em;
   padding: .75em 2em;
   border: none;
-  color: white;
+  color: var(--white);
   border-radius: 50px;
   text-decoration: none;
   font-family: var(--font);
@@ -166,7 +167,7 @@ section section:nth-of-type(4) a:hover{
 
 main > section:nth-of-type(2){
   background-color: var(--darkred);
-  height: 170vh;
+  height: 130vh;
 }
 
 main > section:nth-of-type(2) h1{
@@ -187,8 +188,7 @@ main > section:nth-of-type(2) section{
 
 div{
   width: 30em;
-  height: 35em;
-  background-color: white;
+  background-color: var(--white);
   margin-bottom: 10em;
   overflow: hidden;
 }
@@ -199,12 +199,17 @@ div img{
   margin: 10% auto;
 }
 
+div p{
+  text-align: center;
+  margin: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
   margin: auto;
   max-width: 30%;
-  background-color: white;
+  background-color: var(--white);
   padding: 4em;
 }
 
@@ -237,7 +242,7 @@ input[type=submit] {
   background-color: var(--red);
   font-size: 1.5em;
   border: none;
-  color: white;
+  color: var(--white);
   border-radius: 50px;
   margin: 10% auto 0 auto;
   width: 50%;
@@ -252,7 +257,7 @@ input:focus{
 }
 
 ::placeholder{
-  color: white;
+  color: var(--white);
   padding-left: 1.5em;
   font-family: var(--font);
 }
@@ -275,7 +280,19 @@ footer{
 }
 
 footer p{
-  color: white;
+  color: var(--white);
   margin-left: 0;
   text-align: center;
 }
+
+/* #DM{
+  background-color: var(--darkblue);
+}
+
+.dark-mode{
+  background-color: var(--darkblue);
+}
+
+.dark-mode2{
+  color: var(--white);
+} */

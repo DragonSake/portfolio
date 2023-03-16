@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+:root{
+  --blue: #9bcef5;
+  --grey: #808080;
+  --pink: #e588b8;
+  --darkblue: #132a3f;
+  --darkred: #6f0909;
+  --red: #b42523;
+  --gold: #fdba47;
+  --font: Arial, Helvetica, sans-serif;
+}
+nav {
+    z-index: 1;
+    position: relative;
+}
+
+nav ul{
+  list-style-type: none;
+  width: 90%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li{
+  padding: 2%;
+ /* text-shadow: 0 0 20px #fff; */
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: var(--font);
+  color: var(--gold);
+  font-size: 1.5em;
+  font-weight: 550;
+ }
+
+.test{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: -1.2em auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.test2{
+  width: 100%;
+  overflow: hidden;
+}
+
+section{
+  height: 100vh;
+  position: relative;
+}
+
+section > section:first-of-type{
+  /* width: 80%; */
+}
+
+h1{
+  margin: 40% 0 0 20%;
+  font-family: 'Kaushan Script', cursive;
+  color: var(--red);
+  font-size: 3em;
+}
+
+h2{
+  margin: -1% 0 0 20%;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 200;
+  color: var(--darkblue);
+  font-size: 2.5em;
+}
+
+p{
+  font-family: var(--font);
+  font-size: 1.5em;
+  color: #505050;
+  line-height: 1.5em;
+  margin: 5% 0 0 20%;
+}
+
+button{
+  background-color: var(--red);
+  font-size: 1.75em;
+  padding: .75em 2em;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  margin: 8% 0 0 20%;
+  display: inline;
+}
+
+button:first-of-type{
+  margin: 8% 0 0 20%;
+}
+
+button:hover{
+  background-color: #570707;
+}
+
+button:nth-of-type(2){
+  background-color: white;
+  color: var(--darkred);
+  border: 2px solid var(--darkred);
+  margin-left: 1em;
+}
+
+button:nth-of-type(2):hover{
+  background-color: #eb3330;
+}
+
+div{
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(circle at 100%, var(--red), var(--darkred) 50%, var(--darkred) 75%, var(--darkred) 76%, transparent 76%);
+}
+
+.abme{
+  /* background-color: #132a3f; */
+  margin-top: 30%;
+  height: 70%;
+}
+
+.abme img{
+  width: 70%;
+  float: right;
+  margin-right: 10%;
+}
+
+.text{
+  /* background-color: #505050; */
+}
+
+.text h1{
+  margin-left: 10%;
+  margin-top: 30%;
+}
+
+.text p{
+  margin-left: 10%;
+  width: 70%;
+}
+
+.portfolio{
+  background-color: var(--darkred);
+}
+
+.portfolio h1{
+  text-align: center;
+  margin-top: 60%;
+  margin-left: 0;
+}
+
+.building{
+  position: absolute;
+  width: 120%;
+  top: 10em;
+  left: 5em;
+}
+
+.text button{
+  margin-left: 10%;
+  margin-top: 5%;
+}

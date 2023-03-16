@@ -12,68 +12,104 @@
 
 <body>
   <main>
-  <img src=".jpg" alt="">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#abme">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#abme">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <section>
+      <section>
+        <h1>
+          Hi I'm Ting!
+        </h1>
+        <h2>
+          Graphic designer
+        </h2>
+        <p>
+          My name is Tingting Li. I am 22 years old and I live in Amsterdam. Currently, I am studying Communication and
+          Multimedia Design at the Hogeschool van Amsterdam.
+        </p>
 
-  <section class="test">
-  <section>
-  <h1>
-    Hi I'm Ting!
-  </h1>
-  <h2>
-    Graphic designer
-  </h2>
-  <p>
-    My name is Tingting Li. I am 22 years old and I live in Amsterdam. Currently, I am studying Communication and Multimedia Design at the Hogeschool van Amsterdam.
-  </p>
+        <button>
+          Contact me
+        </button>
+        <button><a href="#projects"></a>
+          Show projects
+        </button>
+      </section>
 
-  <button>
-    Contact me
-  </button>
-  <button><a href="#portfolio"></a>
-    Show portfolio
-  </button>
-</section>
+      <section>
+        <img src="./images/building.png" alt="Chinese building">
+        <div class="circle"></div>
+      </section>
 
-<section class="test2">
-  <img src="./images/building.png" alt="Chinese building" class="building">
-  <div></div>
-</section>
+      <section id="abme">
+        <img src="./images/pf.jpg" alt="Tingting Li">
+      </section>
 
-<section class="abme" id="abme">
-<img src="./images/pf.jpg" alt="Tingting Li">
-</section>
+      <section>
+        <h1>About me</h1>
+        <p>
+          During my education and previous education (media design) I have carried out many projects, which means that I
+          have a lot of experience with programs such as Illustrator, Adobe XD and HTML5&CSS. In addition, I learned to
+          work independently as well as in a team and I have proven that I am eager to learn, goal oriented and have an
+          eye for detail.
+        </p>
 
-<section class="text">
-  <h1>About me</h1>
-  <p>
-    Tijdens mijn opleiding en vorige opleiding (mediavormgeving) heb ik vele projecten uitgevoerd waardoor ik veel ervaring heb opgebouwd met programma’s, zoals Illustrator, Adobe XD en HTML5&CSS. Daarnaast heb ik geleerd om zowel zelfstandig als in een team te werken en heb ik reeds bewezen dat ik leergierig, doelgericht ben en oog voor detail heb.
-  </p>
+        <a href="./images/TingtingLi_CV.pdf" target="_blank">Download CV</a>
 
-  <button class="cv">
-    Download cv
-  </button>
+      </section>
+    </section>
 
-</section>
-</section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <section>
+        <div>
+          <a href="#" id="CSSttR">
+            <img src="./images/quote.png" alt="Project 1">
+          </a>
+        </div>
+        <div>
+          <a href="#" id="NA">
+            <img src="./images/quote.png" alt="Project 2">
+          </a>
+        </div>
+        <div>
+          <a href="#" id="FED">
+            <img src="./images/quote.png" alt="Project 3">
+          </a>
+        </div>
+        <div>
+          <a href="#" id="Wafs">
+            <img src="./images/quote.png" alt="Project 4">
+          </a>
+        </div>
+      </section>
+    </section>
 
-<section class="portfolio" id="portfolio">
-<h1>Portfolio</h1>
-</section>
+    <section>
+      <h1>Contact me!</h1>
+      <form>
+        <input type="text" id="voornaam" name="voornaam" required placeholder="Name">
+        <input type="text" id="email" name="email" required placeholder="E-mail">
+        <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Enter your message.."></textarea>
 
-</main>
+        <input type="submit" value="Submit">
 
-<footer>
-  <p>© 2023 Tingting Li</p>
-</footer>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2023 Webpage of Tingting Li. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>

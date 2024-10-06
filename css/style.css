@@ -19,6 +19,7 @@ body{
     height: 1000px;
     margin-left: 160px;
     margin-right: 160px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -52,10 +53,6 @@ nav ul li a:hover {
     color: var(--pink);
 }
 
-/* section{
-    height: 100%;
-} */
-
 h1{
     color: white;
     font-size: 64px;
@@ -71,13 +68,15 @@ p{
     color: white;
     font-size: 24px;
     font-weight: lighter;
+    padding: 40px 0;
+    line-height: 160%;
 }
 
 section {
-    display: flex;                   /* Flexbox voor de sectie */
-    align-items: flex-start;        /* Zorgt ervoor dat de elementen bovenaan uitgelijnd zijn */
-    padding: 20px;                  /* Ruimte rondom de sectie */
-    box-sizing: border-box;         /* Zorgt ervoor dat padding binnen de totale breedte valt */
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    align-items: center; /* Centreer de inhoud verticaal */
 }
 
 .text-content {
@@ -94,4 +93,47 @@ section img {
     width: 600px;
     height: 600px;
     object-fit: cover;
+    position: relative; /* Nodig voor de schaduw-effecten */
+    z-index: 1; /* Zorg ervoor dat de afbeelding boven de schaduwen komt */
+}
+
+.btn1{
+    background-color: var(--blue);
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 10px;
+    color: var(--bg);
+    font-weight: 600;
+}
+
+.btn2{
+    color: var(--blue);
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    font-weight: 600;
+    margin-left: .5em;
+}
+
+.button-container{
+    margin-top: 2em;
+}
+
+.image-wrapper {
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+}
+
+.image-wrapper::before {
+    content: ""; /* Zorg ervoor dat het pseudo-element wordt weergegeven */
+    position: absolute; /* Positioneer het pseudo-element relatief aan de wrapper */
+    top: -16px; /* Positioneer iets naar boven */
+    left: -16px; /* Positioneer iets naar links */
+    right: -16px; /* Positioneer iets naar rechts */
+    bottom: -16px; /* Positioneer iets naar beneden */
+    border-radius: 50%; /* Maak de schaduw ook rond */
+    background: linear-gradient(135deg, var(--blue), var(--purple), var(--pink)); /* Gebruik een gradient voor de stroke */
+    z-index: 0; /* Zorg ervoor dat het achter de afbeelding blijft */
 }
